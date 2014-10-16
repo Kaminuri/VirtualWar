@@ -11,13 +11,6 @@ public abstract class Robot {
 	private Coordonnees c;
 	public Robot(Vue vue, int l, int h, int equipe){
 	}
-	abstract public boolean peutTirer();
-	public abstract int getCoutAction();
-	public abstract int getCoutDep();
-	public abstract int getDegatTir();
-	public abstract int getDegatMine();
-	public abstract String getType();
-	public abstract public List<Coordonnees> getDeplacement();
 	
 	public boolean estSurBase(){return false;}
 	
@@ -39,5 +32,12 @@ public abstract class Robot {
 	public void setC(Coordonnees c) {
 		this.c = c;
 	}
+	abstract public boolean peutTirer();
+	public abstract int getCoutAction();
+	public abstract int getCoutDep();
+	public abstract int getDegatTir();
+	public abstract int getDegatMine();
+	public abstract String getType();
+	public abstract public List<Coordonnees> getDeplacement();
 	
 }

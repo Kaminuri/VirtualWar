@@ -45,8 +45,7 @@ public class Piegeur extends Robot{
 
 	@Override
 	public String getType() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Piegeur";
 	}
 
 	@Override
