@@ -1,4 +1,4 @@
-package entity;
+package game;
 
 public class Case {
 
