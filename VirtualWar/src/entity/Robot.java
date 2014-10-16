@@ -38,6 +38,6 @@ public abstract class Robot {
 	public abstract int getDegatTir();
 	public abstract int getDegatMine();
 	public abstract String getType();
-	public abstract public List<Coordonnees> getDeplacement();
+	public abstract List<Coordonnees> getDeplacement();
 	
 }
