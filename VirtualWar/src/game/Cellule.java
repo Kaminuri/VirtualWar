@@ -10,6 +10,7 @@ public abstract class Cellule {
 	private Robot robot;
 	String image;
 	public Cellule(int l, int h){
+		c = new Coordonnees(l, h);
 	}
 	public int contientMine(){
 		return mine;

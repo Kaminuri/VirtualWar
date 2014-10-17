@@ -6,7 +6,6 @@ public class Base extends Cellule{
 
 	public Base(int l, int h) {
 		super(l, h);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
