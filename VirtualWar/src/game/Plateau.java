@@ -9,8 +9,8 @@ public class Plateau {
     private final Cellule[][] tab;
     private final Random rdm = new Random();
 
-    public Plateau(){
-        tab = new Cellule[15][10];
+    public Plateau(int l, int h){
+        tab = new Cellule[l][h];
         for(int i = 0; i < tab.length; i++){
             for(int j = 0; j < tab[0].length; j++)
                 tab[i][j] = new Case(i, j);
@@ -28,13 +28,10 @@ public class Plateau {
         }*/
     }
     
-    public Cellule[][] getPlateau(){
+    public Cellule[][] getCellule(){
         return this.tab;
     }
     
-    /**Determine si il y a au moin un chemin valide entre les deux bases.
-     * @param c
-     * @return true si il y a au moins un chemin valide sinon false*/
     public boolean estValide(Coordonnees c){
     	return false;
     }

@@ -5,11 +5,18 @@ import java.util.ArrayList;
 import entity.Robot;
 
 public class Base extends Cellule{
+	
 	private final ArrayList <Robot> listeRobots;
+	
 	public Base(int x, int y, int equipe) {
         super(x, y);
         listeRobots = new ArrayList <Robot>();
-        super.image = " B" + equipe + ' ';
+        if(equipe==1)
+        	super.image = " B";
+
+        if(equipe==2)
+        	super.image = " b";
+        	
         super.base = equipe;
     }
 
@@ -27,9 +34,6 @@ public class Base extends Cellule{
 	}
 
 	@Override
-	void videCase() {
-		// TODO Auto-generated method stub
-		
-	}
+	void videCase() {}
 
 }

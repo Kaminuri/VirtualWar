@@ -7,10 +7,13 @@ import java.util.List;
 import move.Coordonnees;
 
 public class Piegeur extends Robot{
-
+	
+	private int nbMine;
+	
 	public Piegeur(Vue vue, int l, int h, int equipe) {
 		super(vue, l, h, equipe);
-		
+		nbMine =10;
+		this.setEnergie(50);
 	}
 
 	@Override
@@ -44,7 +47,12 @@ public class Piegeur extends Robot{
 		return "Piegeur";
 	}
 	public String toString(){
-		return " P" + this.getEquipe() + ' ';
+		String res = "";
+		if(this.getEquipe()==1)
+			res = " P";
+		if(this.getEquipe()==2)
+			res = " p";
+		return res;
 	}
 
 	@Override

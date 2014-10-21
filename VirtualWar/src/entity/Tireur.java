@@ -44,7 +44,12 @@ public class Tireur extends Robot{
 		return "Tireur";
 	}
 	public String toString(){
-		return " T" + this.getEquipe() + ' ';
+		String res = "";
+		if(this.getEquipe()==1)
+			res = " T";
+		if(this.getEquipe()==2)
+			res = " t";
+		return res;
 	}
 
 	@Override
