@@ -20,27 +20,23 @@ public class Piegeur extends Robot{
 	}
 
 	@Override
-	public int getCoutAction() {
-		// TODO Auto-generated method stub
-		return 0;
+	public int getCoutAtk() {
+		return -2;
 	}
 
 	@Override
 	public int getCoutDep() {
-		// TODO Auto-generated method stub
-		return 0;
+		return -2;
 	}
 
 	@Override
 	public int getDegatTir() {
-		// TODO Auto-generated method stub
-		return 0;
+		return -6;
 	}
 
 	@Override
 	public int getDegatMine() {
-		// TODO Auto-generated method stub
-		return 0;
+		return -6;
 	}
 
 	@Override

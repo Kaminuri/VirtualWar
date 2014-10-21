@@ -6,7 +6,7 @@ import move.Coordonnees;
 import game.Vue;
 
 public abstract class Robot {
-	protected int energie;
+	private int energie;
 	private int equipe;
 	private Coordonnees c;
 	private Vue vue;
@@ -20,6 +20,9 @@ public abstract class Robot {
 	}
 	public Vue getVue(){
 		return vue;
+	}
+	public void setVue(Vue v){
+		vue = v;
 	}
 	public void setEnergie(int energie) {
 		this.energie = energie;
@@ -36,8 +39,11 @@ public abstract class Robot {
 	public void setC(Coordonnees c) {
 		this.c = c;
 	}
+	public String toString(){
+		return "[" + this.getType() + "/ Energie :" + energie + "/ Equipe :" + equipe + "/ Coord :" + c + "]";
+	}
 	abstract public boolean peutTirer();
-	public abstract int getCoutAction();
+	public abstract int getCoutAtk();
 	public abstract int getCoutDep();
 	public abstract int getDegatTir();
 	public abstract int getDegatMine();

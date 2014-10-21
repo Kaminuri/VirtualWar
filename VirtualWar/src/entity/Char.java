@@ -10,7 +10,7 @@ public class Char extends Robot{
 
 	public Char(Vue vue, int l, int h, int equipe) {
 		super(vue, l, h, equipe);
-		// TODO Auto-generated constructor stub ça marche !!! PUTAIN CA MARCHE
+		this.setEnergie(60);
 	}
 
 	@Override
@@ -20,27 +20,24 @@ public class Char extends Robot{
 	}
 
 	@Override
-	public int getCoutAction() {
-		// TODO Auto-generated method stub
-		return 0;
+	public int getCoutAtk() {
+		return -1;
 	}
 
 	@Override
 	public int getCoutDep() {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		return -5;
 	}
 
 	@Override
 	public int getDegatTir() {
-		// TODO Auto-generated method stub
-		return 0;
+		return -6;
 	}
 
 	@Override
 	public int getDegatMine() {
-		// TODO Auto-generated method stub
-		return 0;
+		return -6;
 	}
 
 	@Override

@@ -10,7 +10,7 @@ public class Tireur extends Robot{
 
 	public Tireur(Vue vue, int l, int h, int equipe) {
 		super(vue, l, h, equipe);
-		energie = 20;
+		this.setEnergie(20);
 	}
 
 	@Override
@@ -20,7 +20,7 @@ public class Tireur extends Robot{
 	}
 
 	@Override
-	public int getCoutAction() {
+	public int getCoutAtk() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
