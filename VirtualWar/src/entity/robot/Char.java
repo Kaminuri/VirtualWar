@@ -1,5 +1,6 @@
-package entity;
+package entity.robot;
 
+import entity.Robot;
 import game.Vue;
 
 import java.util.List;
