@@ -10,7 +10,7 @@ public class Tireur extends Robot{
 
 	public Tireur(Vue vue, int l, int h, int equipe) {
 		super(vue, l, h, equipe);
-		// TODO Auto-generated constructor stub
+		energie = 20;
 	}
 
 	@Override

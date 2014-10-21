@@ -6,9 +6,10 @@ import move.Coordonnees;
 import game.Vue;
 
 public abstract class Robot {
-	private int energie;
+	protected int energie;
 	private int equipe;
 	private Coordonnees c;
+	private Vue vue;
 	public Robot(Vue vue, int l, int h, int equipe){
 	}
 	
@@ -16,6 +17,9 @@ public abstract class Robot {
 	
 	public int getEnergie() {
 		return energie;
+	}
+	public Vue getVue(){
+		return vue;
 	}
 	public void setEnergie(int energie) {
 		this.energie = energie;

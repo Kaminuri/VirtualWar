@@ -10,7 +10,7 @@ public class Piegeur extends Robot{
 
 	public Piegeur(Vue vue, int l, int h, int equipe) {
 		super(vue, l, h, equipe);
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	@Override
