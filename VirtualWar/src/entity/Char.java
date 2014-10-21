@@ -10,7 +10,7 @@ public class Char extends Robot{
 
 	public Char(Vue vue, int l, int h, int equipe) {
 		super(vue, l, h, equipe);
-		// TODO Auto-generated constructor stub ça marche !!!
+		// TODO Auto-generated constructor stub ça marche !!! PUTAIN CA MARCHE
 	}
 
 	@Override
