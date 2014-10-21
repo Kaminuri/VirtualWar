@@ -10,6 +10,7 @@ public abstract class Robot {
 	private int equipe;
 	private Coordonnees c;
 	private Vue vue;
+	
 	public Robot(Vue vue, int l, int h, int equipe){
 	}
 	

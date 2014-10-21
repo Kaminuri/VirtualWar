@@ -10,7 +10,7 @@ public class Tireur extends Robot{
 
 	public Tireur(Vue vue, int l, int h, int equipe) {
 		super(vue, l, h, equipe);
-		this.setEnergie(20);
+		this.setEnergie(40);
 	}
 
 	@Override
@@ -21,31 +21,30 @@ public class Tireur extends Robot{
 
 	@Override
 	public int getCoutAtk() {
-		// TODO Auto-generated method stub
-		return 0;
+		return -2;
 	}
 
 	@Override
 	public int getCoutDep() {
-		// TODO Auto-generated method stub
-		return 0;
+		return -1;
 	}
 
 	@Override
 	public int getDegatTir() {
-		// TODO Auto-generated method stub
-		return 0;
+		return -3;
 	}
 
 	@Override
 	public int getDegatMine() {
-		// TODO Auto-generated method stub
-		return 0;
+		return -3;
 	}
 
 	@Override
 	public String getType() {
 		return "Tireur";
+	}
+	public String toString(){
+		return " T" + this.getEquipe() + ' ';
 	}
 
 	@Override

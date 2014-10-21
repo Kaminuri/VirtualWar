@@ -43,6 +43,9 @@ public class Piegeur extends Robot{
 	public String getType() {
 		return "Piegeur";
 	}
+	public String toString(){
+		return " P" + this.getEquipe() + ' ';
+	}
 
 	@Override
 	public List<Coordonnees> getDeplacement() {

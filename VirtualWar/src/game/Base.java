@@ -1,12 +1,18 @@
 package game;
 
+import java.util.ArrayList;
+
 import entity.Robot;
 
 public class Base extends Cellule{
+	private final ArrayList <Robot> listeRobots;
+	public Base(int x, int y, int equipe) {
+        super(x, y);
+        listeRobots = new ArrayList <Robot>();
+        super.image = " B" + equipe + ' ';
+        super.base = equipe;
+    }
 
-	public Base(int l, int h) {
-		super(l, h);
-	}
 
 	@Override
 	void deplaceSur(Robot robot) {
