@@ -1,7 +1,6 @@
 package entity.robot;
 
 import entity.Robot;
-import game.Vue;
 
 import java.util.List;
 
@@ -11,8 +10,8 @@ public class Piegeur extends Robot{
 	
 	private int nbMine;
 	
-	public Piegeur(Vue vue, int l, int h, int equipe) {
-		super(vue, l, h, equipe);
+	public Piegeur( int l, int h, int equipe) {
+		super( l, h, equipe);
 		nbMine =10;
 		this.setEnergie(50);
 	}

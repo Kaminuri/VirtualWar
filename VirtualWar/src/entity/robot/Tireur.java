@@ -9,8 +9,8 @@ import move.Coordonnees;
 
 public class Tireur extends Robot{
 
-	public Tireur(Vue vue, int l, int h, int equipe) {
-		super(vue, l, h, equipe);
+	public Tireur( int l, int h, int equipe) {
+		super( l, h, equipe);
 		this.setEnergie(40);
 	}
 

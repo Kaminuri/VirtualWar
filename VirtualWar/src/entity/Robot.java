@@ -11,7 +11,7 @@ public abstract class Robot {
 	private Coordonnees c;
 	private Vue vue;
 	
-	public Robot(Vue vue, int l, int h, int equipe){
+	public Robot(int l, int h, int equipe){
 	}
 	
 	public boolean estSurBase(){return false;}

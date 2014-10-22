@@ -9,8 +9,8 @@ import move.Coordonnees;
 
 public class Char extends Robot{
 
-	public Char(Vue vue, int l, int h, int equipe) {
-		super(vue, l, h, equipe);
+	public Char( int l, int h, int equipe) {
+		super(l, h, equipe);
 		this.setEnergie(60);
 	}
 
