@@ -1,5 +1,7 @@
 package game;
 
+import game.field.Plateau;
+
 public class Vue {
 	private final String[][] tab;
 	

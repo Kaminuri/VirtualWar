@@ -16,10 +16,15 @@ public class Piegeur extends Robot{
 		nbMine =10;
 		this.setEnergie(50);
 	}
+	public int getNbMine(){
+		return nbMine;
+	}
 
 	@Override
 	public boolean peutTirer() {
-		// TODO Auto-generated method stub
+		if(nbMine !=0 && true){
+			return true;
+		}
 		return false;
 	}
 
