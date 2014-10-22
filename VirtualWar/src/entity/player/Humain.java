@@ -1,55 +1,51 @@
 package entity.player;
 
+import java.util.Scanner;
+
 import entity.Joueur;
 import entity.Robot;
 
 public class Humain extends Joueur{
-
+	Scanner sc;
+	
 	public Humain(int equipe) {
 		super(equipe);
-		// TODO Auto-generated constructor stub
+		sc = new Scanner(System.in);
 	}
 
 	@Override
 	public int getNbTireur() {
-		// TODO Auto-generated method stub
-		return 0;
+		return super.nbTireur;
 	}
 
 	@Override
 	public int getNbPiegeur() {
-		// TODO Auto-generated method stub
-		return 0;
+		return super.nbPiegeur;
 	}
 
 	@Override
 	public int getNbChar() {
-		// TODO Auto-generated method stub
-		return 0;
+		return super.nbChar;
 	}
 
 	@Override
 	public int choixRobot(int nbRobot) {
-		// TODO Auto-generated method stub
-		return 0;
+		return sc.nextInt();
 	}
 
 	@Override
 	public int choixAction() {
-		// TODO Auto-generated method stub
-		return 0;
+		return sc.nextInt();
 	}
 
 	@Override
 	public int directionAttaque(Robot robot) {
-		// TODO Auto-generated method stub
-		return 0;
+		return sc.nextInt();
 	}
 
 	@Override
 	public int directionDeplacement(Robot robot) {
-		// TODO Auto-generated method stub
-		return 0;
+		return sc.nextInt();
 	}
 
 }
