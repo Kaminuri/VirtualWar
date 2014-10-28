@@ -6,7 +6,7 @@ public class Case extends Cellule{
 
 	public Case(int l, int h) {
 		super(l, h);
-		// TODO Auto-generated constructor stub
+		super.image = "    ";
 	}
 
 	@Override

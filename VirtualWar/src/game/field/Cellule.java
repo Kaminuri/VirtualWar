@@ -25,7 +25,7 @@ public abstract class Cellule {
 		return robot;
 	}
 	public String toString(){
-		return "stfu";
+		return image;
 	}
 	abstract void deplaceSur(Robot robot);
 	abstract void ajoute(int equipe);

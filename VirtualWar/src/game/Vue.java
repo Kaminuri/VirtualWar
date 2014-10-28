@@ -20,7 +20,18 @@ public class Vue {
     }
 	
 	public void afficherPlateau(){
-        System.out.print("| 0  | 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  |x/y\n");
+		String res="| 0  ";
+		for(int i=1; i<tab[0].length;++i){
+			if(i<10){
+				res = res + "| " + i+ "  ";
+			}
+			if(i>=10){
+				res = res + "| " + i+ " ";
+			}
+		}
+		res = res + "|x/y";
+        //System.out.print("| 0  | 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  |x/y\n");
+		System.out.println(res);
         System.out.print("+");
         
         for (String s : tab[0])

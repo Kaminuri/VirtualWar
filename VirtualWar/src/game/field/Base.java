@@ -12,10 +12,10 @@ public class Base extends Cellule{
         super(x, y);
         listeRobots = new ArrayList <Robot>();
         if(equipe==1)
-        	super.image = " B";
+        	super.image = " B  ";
 
         if(equipe==2)
-        	super.image = " b";
+        	super.image = " b  ";
         	
         super.base = equipe;
     }
