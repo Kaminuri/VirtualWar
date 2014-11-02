@@ -18,4 +18,7 @@ public abstract class Joueur {
     public abstract int choixAction();
     public abstract int directionAttaque(Robot robot);
     public abstract int directionDeplacement(Robot robot);
+    public int getEquipe(){
+    	return equipe;
+    }
 }

@@ -12,20 +12,20 @@ import entity.robot.Tireur;
 public class Equipe {
 	private final ArrayList <Robot> compo;
 	
-	public Equipe (Joueur joueur, Coordonnees c, int equipe){	
+	public Equipe (Joueur joueur, Coordonnees c){	
         int nbTireur = joueur.getNbTireur();
         int nbPiegeur = joueur.getNbPiegeur();
         int nbChar = joueur.getNbChar();
-        System.out.println("\nEquipe " + equipe);
+        System.out.println("\nEquipe " + joueur.getEquipe());
         compo = new ArrayList <Robot> ();    
         for (int i = 0; i < nbTireur; i++){
-            compo.add(new Tireur(c.getLargeur(), c.getHauteur(), equipe));
+            compo.add(new Tireur(c.getLargeur(), c.getHauteur(), joueur.getEquipe()));
         }
         for (int i = 0; i < nbPiegeur; i++){
-            compo.add(new Piegeur(c.getLargeur(), c.getHauteur(), equipe));
+            compo.add(new Piegeur(c.getLargeur(), c.getHauteur(), joueur.getEquipe()));
         }
         for (int i = 0; i < nbChar; i++){
-            compo.add(new Char(c.getLargeur(), c.getHauteur(), equipe));
+            compo.add(new Char(c.getLargeur(), c.getHauteur(), joueur.getEquipe()));
         }     
     }
 	
