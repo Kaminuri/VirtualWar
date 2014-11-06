@@ -5,7 +5,7 @@ import entity.Joueur;
 import entity.player.Humain;
 import game.field.Plateau;
 
-public class Jeu {
+public class Jeu{
 	public static int HauteurPlateau = 8;
 	public static int LargeurPlateau = 8;
 	public static void main(String[] args){
